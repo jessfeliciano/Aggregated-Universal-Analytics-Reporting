@@ -1,4 +1,5 @@
-// Created by Frank Korf and Jessica Feliciano
+// Code written by Frank Korf and Jessica Feliciano
+// Guide written by Jessica Feliciano
 
 /* Building upon the basicObjectQuery.js file, 
 this script shows how to create a data tree that 
