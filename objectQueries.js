@@ -42,20 +42,20 @@ function getAnalyticsReport( viewId, dates) {
 // Report [0] - This report pulls sessions, conversions and conversion rate data for all users 
 
       {
-        'viewId': viewId ,
-        'dateRanges': dates,
+        'viewId': viewId , // view ID - i.e: 149271239
+        'dateRanges': dates, // start and end dates (see above example) 
         'metrics': [
-          { 'expression': 'ga:sessions' },
-          { 'expression': 'ga:goalCompletionsAll' },
-          { 'expression': 'ga:goalConversionRateAll' },
+          { 'expression': 'ga:sessions' }, // metric[0] this pulls session data
+          { 'expression': 'ga:goalCompletionsAll' }, // metric[1] this pulls completions data
+          { 'expression': 'ga:goalConversionRateAll' }, // metric[2] this pulls conversion rate data
           
         ],
           'dimensions': [
-          { 'name': 'ga:segment' }, 
+          { 'name': 'ga:segment' }, // dimension[0] this pulls all user data
           
         ],
         'segments': [
-          { 'segmentId' : 'gaid::-1' }, //all users
+          { 'segmentId' : 'gaid::-1' }, // this segment pulls all user data
         ]
       }
         ]
@@ -63,7 +63,7 @@ function getAnalyticsReport( viewId, dates) {
       
  var rawResult = AnalyticsReporting.Reports.batchGet( queryObject );
       
- return rawResult;
+ return rawResult; // returns the variable the data tree(s) are assigned to 
       
 }      
       
