@@ -1,4 +1,6 @@
-// Written by Frank Korf and Jessica Feliciano
+// Code written by Frank Korf and Jessica Feliciano
+// Guide written by Jessica Feliciano
+
 /* When pulling data from the Google Analytics Reporting API, 
 you must first write report requests to the API so that it can 
 generate the data trees that you will "grab" wanted data from. 
